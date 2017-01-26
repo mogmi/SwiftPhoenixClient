@@ -19,6 +19,15 @@
 		0BFAE5091DA853B5000B3CD3 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFAE5081DA853B5000B3CD3 /* Starscream.framework */; };
 		0BFAE50A1DA853EE000B3CD3 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFAE5081DA853B5000B3CD3 /* Starscream.framework */; };
 		0BFAE50C1DA85527000B3CD3 /* PathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE50B1DA85527000B3CD3 /* PathTests.swift */; };
+		F8D2C1DB1E3A5BF30024A8A2 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8517E21DAC11C80093A015 /* Socket.swift */; };
+		F8D2C1DC1E3A5BF30024A8A2 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8517E61DAC38E00093A015 /* Binding.swift */; };
+		F8D2C1DD1E3A5BF30024A8A2 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8517E41DAC12F40093A015 /* Channel.swift */; };
+		F8D2C1DE1E3A5BF30024A8A2 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE5001DA84FF2000B3CD3 /* Serializable.swift */; };
+		F8D2C1DF1E3A5BF30024A8A2 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE4FE1DA84FF2000B3CD3 /* Path.swift */; };
+		F8D2C1E01E3A5BF30024A8A2 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE4FF1DA84FF2000B3CD3 /* Payload.swift */; };
+		F8D2C1E11E3A5BF30024A8A2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8517E81DAC39270093A015 /* Message.swift */; };
+		F8D2C1E31E3A5BF30024A8A2 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFAE5081DA853B5000B3CD3 /* Starscream.framework */; };
+		F8D2C1E51E3A5BF30024A8A2 /* SwiftPhoenixClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFAE4E71DA84F59000B3CD3 /* SwiftPhoenixClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,7 @@
 		0BFAE5001DA84FF2000B3CD3 /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		0BFAE5081DA853B5000B3CD3 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = "Vendor/Starscream/build/Debug-iphoneos/Starscream.framework"; sourceTree = "<group>"; };
 		0BFAE50B1DA85527000B3CD3 /* PathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathTests.swift; sourceTree = "<group>"; };
+		F8D2C1EA1E3A5BF30024A8A2 /* SwiftPhoenixClient_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPhoenixClient_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8D2C1E21E3A5BF30024A8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D2C1E31E3A5BF30024A8A2 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,7 +93,6 @@
 				0BFAE4E61DA84F59000B3CD3 /* SwiftPhoenixClient */,
 				0BFAE4F11DA84F59000B3CD3 /* Tests */,
 				0BFAE4E51DA84F59000B3CD3 /* Products */,
-				0BFAE5071DA853B5000B3CD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +101,7 @@
 			children = (
 				0BFAE4E41DA84F59000B3CD3 /* SwiftPhoenixClient.framework */,
 				0BFAE4ED1DA84F59000B3CD3 /* SwiftPhoenixClientTests.xctest */,
+				F8D2C1EA1E3A5BF30024A8A2 /* SwiftPhoenixClient_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +109,7 @@
 		0BFAE4E61DA84F59000B3CD3 /* SwiftPhoenixClient */ = {
 			isa = PBXGroup;
 			children = (
+				0BFAE5071DA853B5000B3CD3 /* Frameworks */,
 				0BFAE4E71DA84F59000B3CD3 /* SwiftPhoenixClient.h */,
 				0BFAE4FE1DA84FF2000B3CD3 /* Path.swift */,
 				0B8517E21DAC11C80093A015 /* Socket.swift */,
@@ -120,6 +139,7 @@
 				0BFAE5081DA853B5000B3CD3 /* Starscream.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +150,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFAE4F51DA84F59000B3CD3 /* SwiftPhoenixClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D2C1E41E3A5BF30024A8A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D2C1E51E3A5BF30024A8A2 /* SwiftPhoenixClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +200,24 @@
 			productReference = 0BFAE4ED1DA84F59000B3CD3 /* SwiftPhoenixClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F8D2C1D91E3A5BF30024A8A2 /* SwiftPhoenixClient-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D2C1E71E3A5BF30024A8A2 /* Build configuration list for PBXNativeTarget "SwiftPhoenixClient-tvOS" */;
+			buildPhases = (
+				F8D2C1DA1E3A5BF30024A8A2 /* Sources */,
+				F8D2C1E21E3A5BF30024A8A2 /* Frameworks */,
+				F8D2C1E41E3A5BF30024A8A2 /* Headers */,
+				F8D2C1E61E3A5BF30024A8A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftPhoenixClient-tvOS";
+			productName = SwiftPhoenixClient;
+			productReference = F8D2C1EA1E3A5BF30024A8A2 /* SwiftPhoenixClient_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +252,7 @@
 			targets = (
 				0BFAE4E31DA84F59000B3CD3 /* SwiftPhoenixClient */,
 				0BFAE4EC1DA84F59000B3CD3 /* SwiftPhoenixClientTests */,
+				F8D2C1D91E3A5BF30024A8A2 /* SwiftPhoenixClient-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +266,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0BFAE4EB1DA84F59000B3CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D2C1E61E3A5BF30024A8A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,6 +301,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFAE50C1DA85527000B3CD3 /* PathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D2C1DA1E3A5BF30024A8A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D2C1DB1E3A5BF30024A8A2 /* Socket.swift in Sources */,
+				F8D2C1DC1E3A5BF30024A8A2 /* Binding.swift in Sources */,
+				F8D2C1DD1E3A5BF30024A8A2 /* Channel.swift in Sources */,
+				F8D2C1DE1E3A5BF30024A8A2 /* Serializable.swift in Sources */,
+				F8D2C1DF1E3A5BF30024A8A2 /* Path.swift in Sources */,
+				F8D2C1E01E3A5BF30024A8A2 /* Payload.swift in Sources */,
+				F8D2C1E11E3A5BF30024A8A2 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +491,49 @@
 			};
 			name = Release;
 		};
+		F8D2C1E81E3A5BF30024A8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClient;
+				PRODUCT_NAME = SwiftPhoenixClient_tvOS;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		F8D2C1E91E3A5BF30024A8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClient;
+				PRODUCT_NAME = SwiftPhoenixClient_tvOS;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,6 +560,15 @@
 			buildConfigurations = (
 				0BFAE4FC1DA84F59000B3CD3 /* Debug */,
 				0BFAE4FD1DA84F59000B3CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D2C1E71E3A5BF30024A8A2 /* Build configuration list for PBXNativeTarget "SwiftPhoenixClient-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D2C1E81E3A5BF30024A8A2 /* Debug */,
+				F8D2C1E91E3A5BF30024A8A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
